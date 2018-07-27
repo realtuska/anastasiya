@@ -124,6 +124,14 @@ nav  ul li a:hover{
 	height:100vh;
 	background-attachment:fixed;
 }
+#video{
+	width:100vw;
+	height:100vh;
+}
+#photo{
+	width:100vw;
+	height:100vh;
+}
 #contact_form {
 	background:url('images/contact.jpg') no-repeat top center;
 	background-size:cover;
