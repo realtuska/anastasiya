@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Anastasiya Danylchenko</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+ </head>
+ <body>
+	 <header>
+	  <div>
+		<a href="index.html"><img src="images/menu.png" alt="Menu"></a>
+		<nav>
+		  <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#about">About me</a></li>
+			<li><a href="#my_works">My works</a>
+				<ul>
+					<li><a href="#Videoshooting">Videoshooting</a></li>
+					<li><a href="#Videoediting">Videoediting</a></li>
+					<li><a href="#Photography">Photography</a></li>
+				</ul>
+			</li>
+			<li><a href="#contact_form">Contact Form</a></li>
+		  </ul>
+		</nav>
+		</div>
+		<div class="social_links">
+			<a href="#"><i class="fab fa-youtube"></i></a>
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+	  </header>
+	  <main>
+		  <section id="home">
+				<h1>
+					<span>СAMERA</span><small>WOMAN</small><br>
+					<small>video</small>editor<br>
+					<b>Photographer</b><br>
+					clipmaker
+				</h1>
+				<div class="logo"><img src="images/logo.png" alt="#Anastasiya Danylchenko"></div>
+		  </section>
+		  <section id="about">
+			  <h2>About<small>me</small></h2>
+				<ul>
+					<li><a href="">SUMMARY</a></li>
+					<li><a href="">EDUCATION</a></li>
+					<li><a href="">PROFESSIONAL SKILLS</a></li>
+					<li><a href="">EXPERIENCE</a></li>
+					<li><a href="">HOBBIES & INTERESTS</a></li>
+				</ul>
+				<article>
+					<h3>Education</h3>
+					<p>Lviv branch Of The Kiev National University Of Culture and Arts, Cinema-Television Art</p>
+					<p>Higer. Special Degree<br>Director of Cinema & TV</p>
+				</article>
+		  </section>
+		  <section id="my_works">
+			<h2><small>my</small>works</h2>
+			<div><a href="#video">VIDEO</a></div><div><a href="#photo">PHOTO</a></div>
+		  </section>
+		  <section id="video">
+				<h2><small>my</small>works</h2>
+				<div><a href="#video" class="active">VIDEO</a></div><div><a href="#photo">PHOTO</a></div>
+				<div class="portdolio"></div>
+		  </section>
+		  <section id="photo">
+				<h2><small>my</small>works</h2>
+				<div><a href="#video">VIDEO</a></div><div><a href="#photo" class="active">PHOTO</a></div>
+				<div class="portdolio"></div>
+		  </section>
+		  <section id="contact_form">
+			<h2>CONTACT<small>me</small></h2>
+			<div>
+				<form method="post" name="cat_form" action="mailto:tanya@zebrasus.com" enctype="text/plain">
+					<p><label for="name">Your name</label>
+					<input type="text" id="name" name="name" required></p>
+					<p><label for="email">E-mail</label>
+					<input type="email" id="email" name="e-mail" required></p>
+					<p><label for="tel">Контактний телефон:</label>
+					<input type="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="000-000-00-00" title="000-000-00-00"></p>
+					<p><label for="info">Your comments:</label></p>
+					<p><textarea name="info" rows="10" cols="100" id="info"></textarea></p>
+					<p><input type="submit"></p>
+				</form>
+			</div>
+		  </section>	 
+		</main>
+		<footer>
+		  <div><small>Copyright © <time datetime="2018">2018</time> Anastasiya.com</small></div>
+		  <div>8(050)-234-65-77</div>
+		</footer> 
+ </body>
+</html>
