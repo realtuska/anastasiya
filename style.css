@@ -117,6 +117,21 @@ nav  ul li a:hover{
 	background-attachment:fixed;
 }
 
+#my_works {
+	background:url('images/works.jpg') no-repeat top center;
+	background-size:cover;
+	width:100vw;
+	height:100vh;
+	background-attachment:fixed;
+}
+#contact_form {
+	background:url('images/contact.jpg') no-repeat top center;
+	background-size:cover;
+	width:100vw;
+	height:100vh;
+	background-attachment:fixed;
+}
+
 footer {
 	width:100%;
 	color:#fff;
