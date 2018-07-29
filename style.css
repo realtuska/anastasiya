@@ -383,6 +383,7 @@ nav  ul li a:hover{
  	color:#fff;
  	text-transform:uppercase;
  	border:none;
+ 	font-size:1.2em;
 }
 
 footer {
@@ -391,8 +392,12 @@ footer {
 	align-items:center;
 	width:100vw;
 	height:60px;
-	color:#fff;
+	color:#958686;
 	background:#000;
 	padding:2px 80px 2px 50px;
 	box-sizing:border-box;
+	font-size:1.4em;
+}
+footer div small {
+	font-size:0.6em;
 }
