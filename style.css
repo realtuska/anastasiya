@@ -1,5 +1,5 @@
 body {
-	margin:0;
+	margin:0 auto;
 	padding:0;
 	font-family:sans-serif;
 	background:#000;
@@ -15,7 +15,7 @@ header {
 	height:60px;
 	color:#fff;
 	background:#000;
-	padding:2px 30px;
+	padding:2px 50px;
 	margin:0;
 	box-sizing:border-box;
 	z-index:900;
@@ -31,10 +31,15 @@ header div{
 header div:first-child{
   text-align: left;
 }
-
+main{	
+	box-sizing:border-box;
+}
 section{
 	padding:0;
 	margin:0;
+	width:100%;
+	height:100vh;
+	box-sizing:border-box;
 }
 
 .social_links {
@@ -78,9 +83,8 @@ nav  ul li a:hover{
 	background:url('images/home.jpg') no-repeat top center;
 	background-size:cover;
 	background-attachment:fixed;
-	width:100vw;
-	height:100vh;
 	text-align:right;
+	border-bottom:70px solid black;
 }
 #home h1 {
 	position:absolute;
@@ -112,38 +116,283 @@ nav  ul li a:hover{
 #about {
 	background:url('images/about.jpg') no-repeat top center;
 	background-size:cover;
-	width:100vw;
-	height:100vh;
 	background-attachment:fixed;
+	padding-left:100px;
+}
+#about h2 {
+  color:#fff;
+  font-weight:300;
+  padding-top:20px;
+  display:inline-block;
+  font-size: 4.1em;
+  text-transform: uppercase;
+  margin-bottom:0;
+}
+
+#about h2 small {
+  background:rgba(255,255,255,0.5);
+  padding:10px;
+  padding-top:120px;
+  color:#000;
+  font-size: 0.5em;
+}
+
+#about ul{
+	margin-left:0;
+	padding-left:0;
+}
+#about ul li{
+	list-style-type:none;
+	line-height:35px;
+}
+#about ul li a{
+	color:black;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bolder;
+}
+#about ul li a:hover{
+	color:white;	
+}
+#about ul li a.active{
+	color:#fff;
+}
+#about article{
+	display:none;
+	width:30%;
+	background:rgba(0,0,0,0.3);
+	margin-top:100px;
+	padding:20px 100px 40px 100px;
+	margin-left:-100px;
+	color:#fff;
+	line-height:1.5;
+}	
+#about article#summary{
+	display:block;
 }
 
 #my_works {
 	background:url('images/works.jpg') no-repeat top center;
 	background-size:cover;
-	width:100vw;
-	height:100vh;
 	background-attachment:fixed;
+	padding-left:100px;
 }
-#video{
-	width:100vw;
-	height:100vh;
+
+#my_works h2, #video h2, #photo h2 {
+  color:#ff2936;
+  font-weight:300;
+  padding-top:36px;
+  display:inline-block;
+  font-size: 4.1em;
+  text-transform: uppercase;
+  margin-bottom:0;
 }
-#photo{
-	width:100vw;
-	height:100vh;
+
+#my_works h2 small, #video h2 small, #photo h2 small {
+  background:#ff2936;
+  padding:10px;
+  padding-top:120px;
+  color:#000;
+  font-size: 0.5em;
 }
+
+#my_works div {
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	height:50%;
+}
+
+#my_works div a{
+	color:#b3a4a4;
+	font-size:3em;
+	margin:0 20px;
+	text-decoration:none;
+}
+#my_works div a:hover{
+	color:#fff;
+}
+#video, #photo{
+	padding: 0 100px;
+}
+#video h3, #photo h3, #video h4, #photo h4{
+	text-align:right;
+	font-weight:normal;
+}
+#video h3 a, #photo h3 a{
+	font-size:1.2em;
+	color:#958686;
+	margin:0 10px;
+	text-decoration:none;
+}
+#video h4 a, #photo h4 a{
+	color:#958686;
+	margin:0 10px;
+	text-decoration:none;
+}
+
+#video h3 a:hover, #photo h3 a:hover{
+	font-size:1.2em;
+	color:#fff;
+}
+
+#video h4 a:hover, #photo h4 a:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+
+#video h3 a.active, #video h3 a:active, #photo h3 a.active, #photo3 a:active{
+	font-size:2em;
+	color:#fff;
+}
+
+.portfolio {
+	display:flex;
+  	justify-content: flex-start;
+  	align-items:center;
+  	align-content:center;
+  	flex-wrap:wrap;
+}
+
+.portfolio a{
+	display:block;
+	width: 25%;
+    height: 280px;
+    border:5px solid black;
+    box-sizing:border-box;
+    background:url(images/about.jpg) 50% 50%;
+    background-size:cover;
+}
+
+.portfolio a p{
+	display:flex;
+	justify-content: center;
+  	align-items:center;
+  	flex-direction:column;
+	opacity:0;
+	background:rgba(0,0,0,0.6);
+	color:white;
+	width:100%;
+	height:100%;
+	margin:0;
+	transition: opacity .8s ease;
+	text-align:center;
+}
+
+.portfolio a p:hover{
+	opacity:1;	
+}
+
+#photo .portfolio a {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+
+#photo .portfolio a:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: none; /* IE 6-9 */
+  opacity:1;	
+}
+
+#photo .portfolio a p{
+	background:none;
+	justify-content: flex-end;
+}
+
+#photo .portfolio a p b{
+	display:inline-block;
+	padding:5px;
+	background:black;
+	color:white;
+	width:100%;
+}
+
 #contact_form {
 	background:url('images/contact.jpg') no-repeat top center;
 	background-size:cover;
-	width:100vw;
-	height:100vh;
 	background-attachment:fixed;
+	display:inline-flex;
+	align-items:flex-end;
+	color:white;
+}
+
+#contact_form article {
+	background:rgba(0,0,0,0.4);
+	height:70vh;
+	width:100vw;
+	text-align:right;
+	box-sizing:border-box;
+	padding-right:100px;
+}
+#contact_form h2{
+	color:white;
+	font-weight:300;
+ 	padding-top:0px;
+  	display:inline-block;
+  	font-size: 3em;
+  	text-transform: uppercase;
+  	margin-bottom:0;
+}
+
+#contact_form h2 small {
+  padding:10px;
+  font-size: 0.5em;
+}
+
+#contact_form form{
+	display:inline-block;
+ 	text-align:left;
+}
+ 
+#contact_form form p{
+  	margin:7px 0;
+}
+ 
+#contact_form form input{
+ 	width:100%;
+ 	box-sizing:border-box;
+ 	height:4vh;
+ 	border:1px solid white;
+ 	background-color:rgba(255,255,255,0.7);
+ 	padding:0 15px;
+ 	color:#000;
+ }
+ 
+#contact_form form textarea{
+ 	width:100%;
+ 	box-sizing:border-box;
+ 	height:20vh;
+ 	border:1px solid white;
+ 	background-color:rgba(255,255,255,0.7);
+ 	padding:10px 15px;
+ }
+ 
+#contact_form form input[type=submit]{
+ 	box-sizing:border-box;
+ 	height:6vh;
+ 	border:1px solid white;
+ 	background-color:#000;
+ 	color:#fff;
+ 	text-transform:uppercase;
+ 	border:none;
 }
 
 footer {
-	width:100%;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	width:100vw;
+	height:60px;
 	color:#fff;
 	background:#000;
-	padding:5px 30px;
+	padding:2px 50px;
 	box-sizing:border-box;
 }
