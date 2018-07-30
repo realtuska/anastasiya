@@ -38,7 +38,7 @@ section{
 	padding:0;
 	margin:0;
 	width:100%;
-	height:100vh;
+	min-height:100vh;
 	box-sizing:border-box;
 }
 
@@ -310,7 +310,7 @@ nav ul li {
 }
 #about article{
 	display:none;
-	width:30%;
+	width:35%;
 	background:rgba(0,0,0,0.3);
 	margin-top:100px;
 	padding:20px 100px 40px 100px;
