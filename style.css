@@ -351,7 +351,8 @@ nav ul li {
 	display:flex;
 	justify-content: center;
 	align-items:center;
-	height:50%;
+	min-height:70vh;
+	border:1px solid red;
 }
 
 #my_works div a{
