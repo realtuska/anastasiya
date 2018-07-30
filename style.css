@@ -93,7 +93,7 @@ nav a:hover {
 
 nav ul li {
 	list-style-type:none;
-	line-height:2em;
+	line-height:1.4em;
 	width:40vw;
 }
 
@@ -186,7 +186,7 @@ nav ul li {
   height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 225px;
+  padding-top: 155px;
   padding-left: 200px;
   background-color: #000;
   background:url('images/menu.jpg') 0 0;
