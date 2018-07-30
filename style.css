@@ -365,6 +365,7 @@ nav ul li {
 }
 #video, #photo{
 	padding: 0 50px;
+	min-height:100vh;
 }
 #video h3, #photo h3, #video h4, #photo h4{
 	text-align:right;
@@ -478,7 +479,7 @@ nav ul li {
 
 #contact_form article {
 	background:rgba(0,0,0,0.4);
-	height:67vh;
+	min-height:67vh;
 	width:100vw;
 	text-align:right;
 	box-sizing:border-box;
