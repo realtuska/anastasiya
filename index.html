@@ -16,7 +16,7 @@
 	<header>
 		<div>
 			<a href="index.html"><img src="images/menu.png" alt="Menu"></a>
-			<nav>
+			<!--<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#about">About me</a></li>
@@ -29,6 +29,32 @@
 					</li>
 					<li><a href="#contact_form">Contact Form</a></li>
 				</ul>
+			</nav>-->
+
+			<nav role="navigation">
+			  <div id="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul id="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html?about#about">About me</a></li>
+					<li><a href="index.html?my_works#my_works">My works</a>
+						<ul>
+							<li><a href="index.html?video#video">Video</a></li>
+							<li><a href="index.html?photo#photo">Photography</a></li>
+						</ul>
+					</li>
+					<li><a href="index.html?contact_form#contact_form">Contacts</a>
+						<div>
+							<p>050-234-65-77<br>
+							<a href="mailto:nastya@zebrasus.com">nastya@zebrasus.com</a><br>
+							Lviv</p>
+						</div>
+					</li>
+				</ul>
+			  </div>
 			</nav>
 		</div>
 		<div class="social_links">
