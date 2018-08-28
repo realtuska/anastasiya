@@ -8,14 +8,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Anastasiya Danylchenko</title>
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 </head>
 
 <body>
 	<header>
 		<div>
-			<a href="index.html"><img src="images/menu.png" alt="Menu"></a>
+			<a href="index.html"><img src="images/menu1.png" alt="Menu"></a>
 			<!--<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -75,8 +75,8 @@
 		<section id="about">
 			<h2>About<small>me</small></h2>
 			<ul>
-				<li><a href="#summary"  class="active">SUMMARY</a></li>
-				<li><a href="#education">EDUCATION</a></li>
+				<li><a href="#summary">SUMMARY</a></li>
+				<li><a href="#education" id="toggleEducation">EDUCATION</a></li>
 				<li><a href="#skills">PROFESSIONAL SKILLS</a></li>
 				<li><a href="#experience">EXPERIENCE</a></li>
 				<li><a href="#hobbies">HOBBIES & INTERESTS</a></li>
@@ -91,34 +91,28 @@
 				<p>Higer. Special Degree<br>Director of Cinema & TV</p>
 			</article>
 			<article id="skills">
-				<h3>Professional skills</h3>
-				<p>
-					Extensive experience in live web event production<br>
-					Superior proficiency with SoundTrack Pro and other video and audio software programs<br>
-					Strong ability to edit videos and audios<br>
-					Good ability to analyze and correct errors in product prior to final release<br>
-					Excellent skills in visualizing production script<br>
-					High ability to develop creative programs<br>
-					Outstanding knowledge of video editing equipment maintenance
-				</p>
+				<h3>Professional Skills</h3>
+				<p><i class="fas fa-check"></i> Extensive experience in live web event production</p>
+				<p><i class="fas fa-check"></i> Superior proficiency with SoundTrack Pro and other video and audio software programs</p>
+				<p><i class="fas fa-check"></i> Strong ability to edit videos and audios</p>
+				<p><i class="fas fa-check"></i> Good ability to analyze and correct errors in product prior to final release</p>
+				<p><i class="fas fa-check"></i> Excellent skills in visualizing production script</p>
+				<p><i class="fas fa-check"></i> High ability to develop creative programs</p>
+				<p><i class="fas fa-check"></i> Outstanding knowledge of video editing equipment maintenance</p>
 			</article>
 			<article id="experience">
 				<h3>Experience</h3>
-				<p>
-					Directed live streamed sporting and meeting events from camera set up to technological resourcing.<br>
-					Shot and Edited production pieces for events happening in Lviv using Adobe Premiere<br>
-					Created graphic templates for numerous assignments using Adobe Photoshop.<br>
-					Cameraman for live music performances, festivals and shows.
-				</p>
+				<p><i class="fas fa-check"></i> Directed live streamed sporting and meeting events from camera set up to technological resourcing.</p>
+				<p><i class="fas fa-check"></i> Shot and Edited production pieces for events happening in Lviv using Adobe Premiere.</p>
+				<p><i class="fas fa-check"></i> Created graphic templates for numerous assignments using Adobe Photoshop.</p>
+				<p><i class="fas fa-check"></i> Cameraman for live music performances, festivals and shows.</p>
 			</article>
 			<article id="hobbies">
 				<h3>Hobbies and Interests</h3>
-				<p>
-					Travelling: Visited 10+ countries. Made 50+photosets during travelling.
-					Reading: Read over 50 books in 4 languages last year.
-					Music: Visited concert of Metallica in Milan.Participated in shooting live music performances and festivals.
-					Sport: 10 years playing altimate, member of famous Lviv women team "Wild West Women".
-					Other: Naking photography? drinking coffee, editing videos, listening music.
+				<p>Travelling: Visited 10+ countries. Made 50+photosets during travelling.</p>
+				<p>Music: Visited concert of Metallica in Milan.Participated in shooting live music performances and festivals.</p>
+				<p>Sport: 10 years playing altimate, member of famous Lviv women team "Wild West Women".</p>
+				<p>Other: Making photography, drinking coffee, editing videos, listening music.</p>
 				</p>
 			</article>
 		</section>
@@ -180,8 +174,23 @@
 	</main>
 	<footer>
 		<div><small>Copyright © <time datetime="2018">2018</time> Anastasiya.com</small></div>
-		<div>8-(050)-234-65-77</div>
+		<div><a href="tel:+380502346577">+38(050)234-65-77</a></div>
 	</footer>
+	
+	<script>
+		function toggleArticle(evt) {
+			evt.preventDefault();
+			
+			let el = document.querySelector('.show');
+			if(el) el.classList.toggle('show');
+
+			let id = evt.currentTarget.getAttribute('href').substring(1);
+			document.getElementById(id).classList.toggle('show');
+		}
+		
+		document.querySelectorAll('#about > ul > li > a')
+    		.forEach(link => link.addEventListener('click', toggleArticle, false));
+	</script>
 </body>
 
 </html>

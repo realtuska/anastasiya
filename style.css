@@ -169,17 +169,10 @@ nav ul li {
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu {
   position: absolute;
   width: 100vw;
@@ -189,8 +182,8 @@ nav ul li {
   padding-top: 155px;
   padding-left: 200px;
   background-color: #000;
-  background:url('images/menu.jpg') 0 0;
-  background-size:contain;
+  background:url('images/menu.jpg') 50% 0 no-repeat;
+  background-size:cover;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -208,9 +201,11 @@ nav ul li {
   text-transform:uppercase;
 }
 
-/*
- * And let's slide it in from the left
- */
+
+#menu li ul {
+  padding-top:16px;
+}
+
 #menuToggle input:checked ~ ul {
   transform: none;
 }
@@ -239,7 +234,7 @@ nav ul li {
 }
 #home h1 {
 	position:absolute;
-	right:10vh;
+	right:8vw;
 	top:25%;
 	color:#888888;
 	font-size:2.2em;
@@ -257,7 +252,7 @@ nav ul li {
 .logo{
 	position:absolute;
 	bottom:6vh;
-	right:10vh;
+	right:8vw;
 }
 
 .logo img{
@@ -318,9 +313,8 @@ nav ul li {
 	color:#fff;
 	line-height:1.5;
 }	
-#about article#summary{
-	display:block;
-}
+
+#about article.show {display:block;}
 
 #my_works {
 	background:url('images/works.jpg') no-repeat top center;
@@ -352,7 +346,6 @@ nav ul li {
 	justify-content: center;
 	align-items:center;
 	min-height:70vh;
-	border:1px solid red;
 }
 
 #my_works div a{
@@ -414,7 +407,6 @@ nav ul li {
     border:5px solid black;
     box-sizing:border-box;
     background:url(images/about.jpg) 50% 30%;
-    background-size:cover;
 }
 
 .portfolio a p{
@@ -470,7 +462,7 @@ nav ul li {
 }
 
 #contact_form {
-	background:url('images/contact.jpg') no-repeat top center;
+	background:url('images/contact1.jpg') no-repeat top center;
 	background-size:cover;
 	background-attachment:fixed;
 	display:inline-flex;
@@ -552,6 +544,99 @@ footer {
 	box-sizing:border-box;
 	font-size:1.4em;
 }
+
+footer a {
+	color:inherit;
+	text-decoration:none;
+}
+
 footer div small {
 	font-size:0.6em;
+}
+
+@media screen and (max-width: 600px) {
+	header {
+    padding-left:20px;
+    padding-right:10px;
+	}
+	
+	#home {
+    background-position: 20% 50%;
+    /* background-size: cover; */
+	}
+	
+	#home h1 {
+	    right: 4vw;
+	    top: 60%;
+	    color: #bdbdbd;
+	    font-size: 1.7em;
+	}
+	
+	.logo {
+    bottom:2vh;
+    right:4vw;
+	}
+	
+	.logo img {
+    width: 80vw;
+	}
+	
+	#menu {
+    padding-left: 100px;
+    background: url(images/menu.jpg) 65% 0 no-repeat;
+    background-size: cover;
+	}
+	
+	nav ul li {
+    list-style-type: none;
+    line-height: 1.4em;
+    width: 100vw;
+	}
+	
+	#about article {
+    margin-top: 0px;
+    padding: 20px 100px 40px 100px;
+    margin-left: -100px;
+    width:100vw;
+    box-sizing:border-box;
+	}
+	
+	#my_works, #photo, #video {
+    padding-left: 20px;
+	}
+	
+	#my_works div a {
+    font-size: 2.5em;
+	}
+	
+	.portfolio a {
+    width: 100%;
+	}
+	
+	#video, #photo {
+    padding: 0 20px;
+	}
+	
+	#contact_form {
+    background-position: 89% 50%;
+	}
+	
+	#contact_form article {
+    min-height: 70vh;
+    width: 100vw;
+    text-align: center;
+    padding-right: 0px;
+	}
+	
+	#contact_form form p {
+    margin: 10px 0;
+	}
+	#contact_form form textarea {
+    width: 60vw;
+	}
+	footer {
+    display: block;
+    text-align: center;
+    padding: 2px 50px;
+	}
 }
