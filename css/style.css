@@ -561,6 +561,7 @@ iframe {
  	text-transform:uppercase;
  	border:none;
  	font-size:1.2em;
+ 	outline: none;
 }
 
 footer {
