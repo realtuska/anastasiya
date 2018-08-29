@@ -5,6 +5,11 @@ body {
 	background:#000;
 }
 
+ a {
+ 	color:#000000;
+ 	text-decoration:none;
+ }
+ 
 header {
 	position:fixed;
 	display: flex;
@@ -52,35 +57,6 @@ section{
 	padding:0 10px;
 }
 
-/*nav{
-	display:block;
-	opacity:0;
-	background:#000;
-	position:fixed;
-	top:0;
-	left:0;
-}
-
-nav:hover {
-	display:block;
-}
-
-nav ul{
-	
-}
-
-nav ul li {
-
-}
-
-nav ul li a{
-	color:#fff;
-}
-
-nav  ul li a:hover{
-
-}*/
-
 nav a {
   text-decoration: none;
   color: #fff;  
@@ -89,6 +65,7 @@ nav a {
 
 nav a:hover {
   color: #ff2936;
+  text-decoration: none;
 }
 
 nav ul li {
@@ -133,6 +110,7 @@ nav ul li {
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
+  margin-top: 3px;
   position: relative;  
   background: #fff;
   border-radius: 3px;  
@@ -182,7 +160,7 @@ nav ul li {
   padding-top: 155px;
   padding-left: 200px;
   background-color: #000;
-  background:url('images/menu.jpg') 50% 0 no-repeat;
+  background:url('../images/menu.jpg') 50% 0 no-repeat;
   background-size:cover;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -225,7 +203,7 @@ nav ul li {
 
 #home {
 	position:relative;
-	background:url('images/home.jpg') no-repeat top center;
+	background:url('../images/home.jpg') no-repeat top center;
 	background-size:cover;
 	background-attachment:fixed;
 	text-align:right;
@@ -260,7 +238,7 @@ nav ul li {
 }
 
 #about {
-	background:url('images/about.jpg') no-repeat top center;
+	background:url('../images/about.jpg') no-repeat top center;
 	background-size:cover;
 	background-attachment:fixed;
 	padding-left:50px;
@@ -273,6 +251,8 @@ nav ul li {
   font-size: 4.1em;
   text-transform: uppercase;
   margin-bottom:0;
+  line-height: 1;
+  margin-top: 59px;
 }
 
 #about h2 small {
@@ -286,6 +266,7 @@ nav ul li {
 #about ul{
 	margin-left:0;
 	padding-left:0;
+	margin-top: 40px;
 }
 #about ul li{
 	list-style-type:none;
@@ -312,12 +293,28 @@ nav ul li {
 	margin-left:-100px;
 	color:#fff;
 	line-height:1.5;
+	animation-duration: 1s;
+  animation-name: slidein;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }	
 
-#about article.show {display:block;}
+#about article.show {
+	display:block;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -50%;
+  }
+
+  to {
+    margin-left:-100px;
+  }
+}
 
 #my_works {
-	background:url('images/works.jpg') no-repeat top center;
+	background:url('../images/works.jpg') no-repeat top center;
 	background-size:cover;
 	background-attachment:fixed;
 	padding-left:50px;
@@ -331,6 +328,8 @@ nav ul li {
   font-size: 4.1em;
   text-transform: uppercase;
   margin-bottom:0;
+  line-height: 1;
+  margin-top: 59px;
 }
 
 #my_works h2 small, #video h2 small, #photo h2 small {
@@ -364,9 +363,11 @@ nav ul li {
 #video h3, #photo h3, #video h4, #photo h4{
 	text-align:right;
 	font-weight:normal;
+	margin-bottom: 40px;
+	margin-top: 30px;
 }
 #video h3 a, #photo h3 a{
-	font-size:1.2em;
+	font-size:1em;
 	color:#958686;
 	margin:0 10px;
 	text-decoration:none;
@@ -388,8 +389,12 @@ nav ul li {
 }
 
 #video h3 a.active, #video h3 a:active, #photo h3 a.active, #photo3 a:active{
-	font-size:2em;
+	font-size:1.5em;
 	color:#fff;
+}
+
+#video b{
+	text-transform:uppercase;
 }
 
 .portfolio {
@@ -403,10 +408,13 @@ nav ul li {
 .portfolio a{
 	display:block;
 	width: 25%;
-    height: 280px;
-    border:5px solid black;
-    box-sizing:border-box;
-    background:url(images/about.jpg) 50% 30%;
+  height: 280px;
+  border:5px solid black;
+  box-sizing:border-box;
+  background-position: 50% 30%;
+  text-decoration:none;
+  color:#000000 !important;
+  outline:none;
 }
 
 .portfolio a p{
@@ -426,6 +434,27 @@ nav ul li {
 
 .portfolio a p:hover{
 	opacity:1;	
+}
+
+iframe {
+    max-width: 765px;
+    height: 360px;
+    max-height: 400px;
+}
+
+.modal-content {
+	background-color: #434343;
+	color:white;
+}
+
+.modal-header {
+	border-bottom:none;
+}
+
+.close {
+    font-weight: 300;
+    color: #fff;
+    text-shadow: none;
 }
 
 #photo .portfolio a {
@@ -462,7 +491,7 @@ nav ul li {
 }
 
 #contact_form {
-	background:url('images/contact1.jpg') no-repeat top center;
+	background:url('../images/contact1.jpg') no-repeat top center;
 	background-size:cover;
 	background-attachment:fixed;
 	display:inline-flex;
@@ -486,6 +515,7 @@ nav ul li {
   font-size: 3em;
  	text-transform: uppercase;
   margin-bottom:0;
+  margin-top: 30px;
 }
 
 #contact_form h2 small {
@@ -499,7 +529,7 @@ nav ul li {
 }
  
 #contact_form form p{
-  	margin:7px 0;
+  	margin:0;
 }
  
 #contact_form form input{
@@ -510,6 +540,7 @@ nav ul li {
  	background-color:rgba(255,255,255,0.7);
  	padding:0 15px;
  	color:#000;
+ 	margin-bottom: 7px;
  }
  
 #contact_form form textarea{
@@ -583,7 +614,7 @@ footer div small {
 	
 	#menu {
     padding-left: 100px;
-    background: url(images/menu.jpg) 65% 0 no-repeat;
+    background: url(../images/menu.jpg) 65% 0 no-repeat;
     background-size: cover;
 	}
 	
@@ -613,8 +644,16 @@ footer div small {
     width: 100%;
 	}
 	
+	#video h3 a.active, #video h3 a:active, #photo h3 a.active, #photo3 a:active {
+		font-size:1.2em;
+	}
+	
 	#video, #photo {
     padding: 0 20px;
+	}
+	
+	iframe {
+    max-width: 333px;
 	}
 	
 	#contact_form {

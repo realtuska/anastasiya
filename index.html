@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Anastasiya Danylchenko</title>
@@ -16,37 +17,22 @@
 	<header>
 		<div>
 			<a href="index.html"><img src="images/menu1.png" alt="Menu"></a>
-			<!--<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#about">About me</a></li>
-					<li><a href="#my_works">My works</a>
-						<ul>
-							<li><a href="#Videoshooting">Videoshooting</a></li>
-							<li><a href="#Videoediting">Videoediting</a></li>
-							<li><a href="#Photography">Photography</a></li>
-						</ul>
-					</li>
-					<li><a href="#contact_form">Contact Form</a></li>
-				</ul>
-			</nav>-->
-
 			<nav role="navigation">
 			  <div id="menuToggle">
-				<input type="checkbox" />
+				<input type="checkbox" id="toggleMenu">
 				<span></span>
 				<span></span>
 				<span></span>
 				<ul id="menu">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="index.html?about#about">About me</a></li>
-					<li><a href="index.html?my_works#my_works">My works</a>
+					<li><a href="index.html#about">About me</a></li>
+					<li><a href="index.html#my_works">My works</a>
 						<ul>
-							<li><a href="index.html?video#video">Video</a></li>
-							<li><a href="index.html?photo#photo">Photography</a></li>
+							<li><a href="index.html#video">Video</a></li>
+							<li><a href="index.html#photo">Photography</a></li>
 						</ul>
 					</li>
-					<li><a href="index.html?contact_form#contact_form">Contacts</a>
+					<li><a href="index.html#contact_form">Contacts</a>
 						<div>
 							<p>050-234-65-77<br>
 							<a href="mailto:nastya@zebrasus.com">nastya@zebrasus.com</a><br>
@@ -58,9 +44,9 @@
 			</nav>
 		</div>
 		<div class="social_links">
-			<a href="#"><i class="fab fa-youtube"></i></a>
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.youtube.com/channel/UCqTYHe_IrLnIK880M72JnJQ"><i class="fab fa-youtube"></i></a>
+			<a href="https://www.facebook.com/anastasiya.danylchenko"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/ultinastya"><i class="fab fa-instagram"></i></a>
 		</div>
 	</header>
 	<main>
@@ -76,12 +62,12 @@
 			<h2>About<small>me</small></h2>
 			<ul>
 				<li><a href="#summary">SUMMARY</a></li>
-				<li><a href="#education" id="toggleEducation">EDUCATION</a></li>
+				<li><a href="#education">EDUCATION</a></li>
 				<li><a href="#skills">PROFESSIONAL SKILLS</a></li>
 				<li><a href="#experience">EXPERIENCE</a></li>
 				<li><a href="#hobbies">HOBBIES & INTERESTS</a></li>
 			</ul>
-			<article id="summary">
+			<article id="summary" class="show">
 				<h3>Summary</h3>
 				<p>Creative, meticulous and dedicated Video Editor with an excellent eye for detail, unparalleled track record of employer satisfaction and a deep passion for film and all things visual seeks to share his talent as the Video Editor</p>
 			</article>
@@ -127,31 +113,29 @@
 			<h2><small>my</small>works</h2>
 			<h3><a href="#video" class="active">VIDEO</a> <a href="#photo">PHOTO</a></h3>
 			<div class="portfolio">
-				<a href="#" style="background-image:url('images/balet3.jpg');"><p><b>LVIV STREET DANCE</b><br>may 2017<br>Dance School</p></a>
-				<a href="#" style="background-image:url('images/dance.jpg');"><p><b>"DANCIES"</b><br>november 2016<br>second group</p></a>
-				<a href="#" style="background-image:url('images/balet2.jpg');"><p><b>LVIV STREET DANCE</b><br>may 2017<br>Dance School</p></a>
-				<a href="#" style="background-image:url('images/jazz.jpg');"><p><b>JAZZ CONCERT</b><br>september 2016<br>Art-prostir "Dzyga"</p></a>
-				<a href="#" style="background-image:url('images/balet.jpg');"><p><b>LVIV STREET DANCE</b><br>may 2017<br>Dance School</p></a>
-				<a href="#" style="background-image:url('images/baraban.jpg');"><p><b>JAZZ CONCERT</b><br>september 2016<br>Art-prostir "Dzyga"</p></a>
-				<a href="#" style="background-image:url('images/andrew.jpg');"><p><b>JAZZ CONCERT</b><br>september 2016<br>Art-prostir "Dzyga"</p></a>
-				<a href="#" style="background-image:url('images/small_dance.jpg');"><p><b>"DANCIES"</b><br>november 2016<br>first group</p></a>
+				<a href="https://youtu.be/nrhNDzUQlJw" style="background-image:url('images/balet2.jpg');"><p><b>LVIV STREET DANCE</b><br>may 2017<br>Dance School</p></a>
+				<a href="https://youtu.be/bOdGU1Djcz4" style="background-image:url('images/dance.jpg');"><p><b>"DANCIES"</b><br>november 2016<br>second group</p></a>
+				<a href="https://youtu.be/f44wTjYzeFU" style="background-image:url('images/masks.jpg');"><p><b>Photofilm "Time of Changes"</b><br>may 2014</p></a>
+				<a href="https://youtu.be/sYGM3pFYYUc" style="background-image:url('images/lviv.jpg');"><p><b>Lion city</b><br>september 2016<br>Lviv</p></a>
+				<a href="https://youtu.be/qI4i72eQ3CI" style="background-image:url('images/rally.jpg');"><p><b>Rally</b><br>september 2017<br>Truskavets</p></a>
+				<a href="https://youtu.be/U3JJeUSSMoo" style="background-image:url('images/altimat.jpg');"><p><b>Life-Movement-Ultimat</b><br>october 2014<br>Lviv altimate</p></a>
+				<a href="https://youtu.be/VrkrtCzNtjk" style="background-image:url('images/song.jpg');"><p><b>Music Promo</b><br>september 2017</p></a>
+				<a href="https://youtu.be/HxHaa843Xjs" style="background-image:url('images/small_dance.jpg');"><p><b>"DANCIES"</b><br>november 2016<br>first group</p></a>
 			</div>
-			<h4><a href="#">See more videos</a></h4>
 		</section>
 		<section id="photo">
 			<h2><small>my</small>works</h2>
 			<h3><a href="#video">VIDEO</a> <a href="#photo" class="active">PHOTO</a></h3>
 			<div class="portfolio">
-				<a href="#" style="background-image:url('images/qween.jpg');"><p><b>Snow Qween</b></p></a>
-				<a href="#" style="background-image:url('images/alica.jpg');"><p><b>Alice</b></p></a>
-				<a href="#" style="background-image:url('images/bell.jpg');"><p><b>Bella</b></p></a>
-				<a href="#" style="background-image:url('images/rabbit.jpg');"><p><b>Rabbit</b></p></a>
-				<a href="#" style="background-image:url('images/germiona.jpg');"><p><b>Germiona</b></p></a>
-				<a href="#" style="background-image:url('images/rapuncel.jpg');"><p><b>Rapuncel</b></p></a>
-				<a href="#" style="background-image:url('images/snowwhite.jpg');"><p><b>Snowhite</b></p></a>
-				<a href="#" style="background-image:url('images/terminator.jpg');"><p><b>Terminator</b></p></a>
+				<a href="#" style="background-image:url('images/qween.jpg');" data-toggle="modal" data-target="#photoModal"><p><b>Snow Qween</b></p></a>
+				<a href="#" style="background-image:url('images/alica.jpg');" data-toggle="modal" data-target="#photoModal"><p><b>Alice</b></p></a>
+				<a href="#" style="background-image:url('images/bell.jpg');" data-toggle="modal" data-target="#photoModal"><p><b>Bella</b></p></a>
+				<a href="#" style="background-image:url('images/rabbit.jpg');" data-toggle="modal" data-target="#photoModal"><p><b>Rabbit</b></p></a>
+				<a href="#" style="background-image:url('images/germiona.jpg');" data-toggle="modal" data-target="#photoModal"><p><b>Germiona</b></p></a>
+				<a href="#" style="background-image:url('images/rapuncel.jpg');" data-toggle="modal" data-target="#photoModal"><p><b>Rapuncel</b></p></a>
+				<a href="#" style="background-image:url('images/snowwhite.jpg');" data-toggle="modal" data-target="#photoModal"><p><b>Snowhite</b></p></a>
+				<a href="#" style="background-image:url('images/terminator.jpg');" data-toggle="modal" data-target="#photoModal"><p><b>Terminator</b></p></a>
 			</div>
-			<h4><a href="#">See more photos</a></h4>
 		</section>
 		<section id="contact_form">
 			<article>
@@ -176,21 +160,29 @@
 		<div><small>Copyright © <time datetime="2018">2018</time> Anastasiya.com</small></div>
 		<div><a href="tel:+380502346577">+38(050)234-65-77</a></div>
 	</footer>
-	
-	<script>
-		function toggleArticle(evt) {
-			evt.preventDefault();
-			
-			let el = document.querySelector('.show');
-			if(el) el.classList.toggle('show');
 
-			let id = evt.currentTarget.getAttribute('href').substring(1);
-			document.getElementById(id).classList.toggle('show');
-		}
-		
-		document.querySelectorAll('#about > ul > li > a')
-    		.forEach(link => link.addEventListener('click', toggleArticle, false));
-	</script>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	<img id="bigpict" src="" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </body>
 
 </html>
